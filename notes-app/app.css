@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+main{
+    background-color: #98D2C0;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    margin-left: 30px;
+    color: #F6F8D5;
+}
+
+header{
+    background-color: #205781;
+}
+
+nav img{
+    width: 30px;
+    height: 30px;
+}
+
+note-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+note-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #F6F8D5;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+note-item h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+note-item p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+}
+
+#note-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+#note-form > * {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#note-form #title{
+    padding: 5px;
+}
+
+input, textarea{
+    background-color: #F6F8D5;
+}
+
+#note-form #body{
+    resize: vertical; 
+    overflow-x: hidden; 
+    padding-bottom: 50px;
+
+}
+
+#note-form #button{
+    background-color: #4F959D;
+    color:  white;
+    padding: 5px;
+}
+
+footer{
+    text-align: center;
+    background-color: #4F959D;
+    padding: 20px;
+    color: #F6F8D5;
+}
+footer p{
+    margin: 0;
+}
